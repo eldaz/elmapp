@@ -1,1 +1,1 @@
-web: node elm.js
+web: node src/index.js
