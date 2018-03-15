@@ -27,7 +27,7 @@ install:
   -n 2 elm-make-old \"\$@\"" > $(npm config get prefix)/bin/elm-make
 - chmod +x $(npm config get prefix)/bin/elm-make
 - travis_retry elm package install --yes
-- elm-app production
+- elm-app build
 before_script:
   - mv /build /prodBuild
 script:
