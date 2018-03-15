@@ -27,6 +27,8 @@ install:
   -n 2 elm-make-old \"\$@\"" > $(npm config get prefix)/bin/elm-make
 - chmod +x $(npm config get prefix)/bin/elm-make
 - travis_retry elm package install --yes
+before_script:
+  - cp public/index.html ./index.html
 script:
 - elm-test --verbose
 deploy:
