@@ -1,1 +1,1 @@
-web: public/
+web: node elm.js
