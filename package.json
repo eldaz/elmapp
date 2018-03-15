@@ -1,0 +1,7 @@
+{
+    "name": "elmapp",
+    "description": "an elm app",
+    "authors": "eldaz",
+    "version": "1.0.0",
+    "dependencies": {}
+}
