@@ -28,8 +28,6 @@ install:
 - chmod +x $(npm config get prefix)/bin/elm-make
 - travis_retry elm package install --yes
 - elm-app build
-before_script:
-  - mv /build /prodBuild
 script:
 - elm-test --verbose
 deploy:
