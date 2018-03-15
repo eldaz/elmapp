@@ -4,7 +4,7 @@
     "authors": "eldaz",
     "version": "1.0.0",
     "dependencies": {
-        "node":"6.11.2",
+        "node":"9.8.0",
         "npm": "3.5.2"
     }
 }
