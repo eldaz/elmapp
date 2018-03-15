@@ -21,12 +21,15 @@ before_install:
     cd ..;
   fi
 install:
-- npm install -g elm@$ELM_VERSION elm-test@$ELM_TEST
+- npm install -g elm@$ELM_VERSION elm-test@$ELM_TEST create-elm-app
 - mv $(npm config get prefix)/bin/elm-make $(npm config get prefix)/bin/elm-make-old
 - printf "#\041/bin/bash\n\necho \"Running elm-make with sysconfcpus -n 2\"\n\n$TRAVIS_BUILD_DIR/sysconfcpus/bin/sysconfcpus
   -n 2 elm-make-old \"\$@\"" > $(npm config get prefix)/bin/elm-make
 - chmod +x $(npm config get prefix)/bin/elm-make
 - travis_retry elm package install --yes
+- elm-app production
+before_script:
+  - mv /build /prodBuild
 script:
 - elm-test --verbose
 deploy:
