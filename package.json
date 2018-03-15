@@ -3,5 +3,8 @@
     "description": "an elm app",
     "authors": "eldaz",
     "version": "1.0.0",
-    "dependencies": {}
+    "dependencies": {
+        "node":"6.11.2",
+        "npm": "3.5.2"
+    }
 }
