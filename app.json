@@ -2,7 +2,7 @@
     "name": "elmapp",
     "repository": "https://github.com/eldaz/elmapp",
     "env": {
-        "ELM_COMPILE": "elm make src/Main.elm --output elm.js"
+        "ELM_COMPILE": "elm make src/Main.elm --output src/elm.js"
     },
     "buildpacks": [
         {
